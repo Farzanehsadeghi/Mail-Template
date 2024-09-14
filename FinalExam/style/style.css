@@ -1,0 +1,155 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 320px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow: auto;
+  padding-top: 20px;
+  transition: 0.5s;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.sidenav a:hover{
+  background-color:rgb(211,211,211,0.3);
+}
+
+#newmessage {
+  background-color: rgb(85, 84, 84);
+  color: white;
+}
+#newmessage:hover {
+  background-color: black;
+  color: white;
+}
+
+.dropdown-btn{
+  padding: 6px 8px 6px 16px;
+  font-size: 20px;
+  color: white;
+  background-color: red;
+  display: block;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: red;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  background-color: white;
+  padding-left: 8px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+.all {
+  margin-left: 320px;
+  margin-top: 0;
+}
+
+.mr {
+  margin-right: 15px;
+  border-radius: 5%;
+}
+
+.ml {
+  margin-left: 10px;
+}
+
+.mail-right {
+  float: right;
+}
+
+.mail-left {
+  float: left;
+}
+
+.animatetop {
+  position: relative;
+  animation: animatetop 0.4s
+}
+
+.modal-content {
+  width: 150%;
+}
+
+.modal-title {
+  font-size: xx-large;
+  color: aliceblue;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.pad {
+  margin-left: 70%;
+  margin-bottom: 2%;
+}
+
+.mright {
+  margin-right: 75%;
+}
+
+@media screen and (max-width: 700px) {
+
+  .sidenav {
+    width: 50%;
+    height: auto;
+    display: none;
+  }
+
+  .all {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+
+  .pad {
+    margin-left: 40%;
+    margin-bottom: 5%;
+  }
+
+  .mright {
+    margin-right: 50%;
+  }
+  
+}
